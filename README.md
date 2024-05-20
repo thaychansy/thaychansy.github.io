@@ -1,1 +1,0 @@
-# thaychansy.github.io
