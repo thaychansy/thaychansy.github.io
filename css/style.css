@@ -643,7 +643,7 @@ textarea {
     margin-right: 1rem;
     width: 2.5rem; }
     .main-footer__icon--mr-none {
-      margin-right: 0; }
+      margin-right: 1; }
   .main-footer__lower {
     padding: 4rem 0;
     border-top: 1px solid #444;
