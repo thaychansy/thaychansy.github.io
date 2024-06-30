@@ -556,6 +556,29 @@ In this deliverable, you'll use your weather data skills to plan future vacation
           <a rel="noreferrer" target="_blank" href="https://github.com/rammcodes"
             >rammcodes</a
           >
+
+          <p>Visitor Count: <span id="visitor-count"></span></p>
+          <script>
+            function getVisitCount() {
+              let visits = 0;
+              // Check if cookie exists
+              if (document.cookie.indexOf('visits=') !== -1) {
+                visits = parseInt(document.cookie.split('visits=')[1]);
+              }
+              return visits;
+            }
+        
+            function setVisitCount(count) {
+              document.cookie = `visits=${count}`;
+            }
+        
+            let visitCount = getVisitCount();
+            visitCount++; // Increment the count
+            setVisitCount(visitCount);
+        
+            // Display the count on your webpage
+            document.getElementById('visitor-count').textContent = visitCount;
+          </script>
         </div>
       </div>
     </footer>
